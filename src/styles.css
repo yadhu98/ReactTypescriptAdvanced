@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.App {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.product-main:hover {
+  transform: scale(1.4);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.price-tag {
+  width: 100%;
+  height: 70px;
+}
+
+.product-main:hover .price-tag {
+  width: 80%;
+  height: 30px;
+  position: absolute;
+  top: 120px;
+  transition: 0.6s ease-in-out;
+}
+
+.show-description {
+  /* width: 100%; */
+  /* height: 50px; */
+  display: none;
+}
+
+.price-tag:hover .item-description {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  height: 300px;
+  /* position: absolute; */
+  /* bottom: 20; */
+  transition: 0.6s ease-in-out;
+  @starting-style {
+    opacity: 0;
+  }
+}
+
+.item-description {
+  display: none;
+  height: 80px;
+  font-size: 0.6rem;
+  background: #f1f9fe;
+  position: absolute;
+  /* bottom: 10px; */
+  padding: 2%;
+}
+
+.product-main:hover .show-description {
+  display: block;
+  transition: 0.6s ease-in-out;
+}
